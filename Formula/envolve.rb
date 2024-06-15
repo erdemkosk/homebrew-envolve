@@ -5,20 +5,20 @@
 class Envolve < Formula
   desc "Synchronize environment variables across projects and manage .env files. Automates the restoration of .env files for all projects, ensures consistency by syncing variables from a global .env file, and creates symbolic links to maintain the latest environment settings."
   homepage "https://erdemkosk.github.io/envolve-app/"
-  version "1.0.11"
+  version "1.0.12"
 
   on_macos do
     on_intel do
-      url "https://github.com/erdemkosk/envolve/releases/download/v1.0.11/envolve_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "8f50dd0df7b6eb7c36206d6ddc0e61554c2fa8490ae4cd5a19e7c04ae61253b2"
+      url "https://github.com/erdemkosk/envolve/releases/download/v1.0.12/envolve_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d4390a4c5a4ce868be617c4e0263a8c7e9842e191e97bf844a8324cc6477953d"
 
       def install
         bin.install "envolve"
       end
     end
     on_arm do
-      url "https://github.com/erdemkosk/envolve/releases/download/v1.0.11/envolve_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "9445cc2e1252208831359d1db2801777090ba67395a5f6fbec9fd78cd810275e"
+      url "https://github.com/erdemkosk/envolve/releases/download/v1.0.12/envolve_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "65116596367836cb64c7dd430af620a373a6b98db95ca15223186b48f0d422e5"
 
       def install
         bin.install "envolve"
@@ -29,8 +29,8 @@ class Envolve < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erdemkosk/envolve/releases/download/v1.0.11/envolve_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-        sha256 "317bc4d502e51e607160ea5c8ff0f5adc7f67fb33f711dd6feeb847045bc76cb"
+        url "https://github.com/erdemkosk/envolve/releases/download/v1.0.12/envolve_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+        sha256 "c6b575ea0249e6ff473cd3192b191e8f550acac5332f6028573e14cb5124d723"
 
         def install
           bin.install "envolve"
@@ -39,8 +39,8 @@ class Envolve < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/erdemkosk/envolve/releases/download/v1.0.11/envolve_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "d0b306891988f1ac5dbd7f64678d34f9a5d0579e2c2e94a6cbe37b3e4adb2d95"
+        url "https://github.com/erdemkosk/envolve/releases/download/v1.0.12/envolve_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "26cec1c99757ff9ed4fc903c31f10946386811d645aef493a40a8ea3db754646"
 
         def install
           bin.install "envolve"
